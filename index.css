@@ -8,6 +8,9 @@ body {
     height: fit-content;
     font-family: "Roboto", sans-serif;
     margin: 0;
+    margin-top: 110px;
+    font-size: 1rem;
+    font-weight: 549;
     display: flex;
     flex-direction: column;
     background-color: #078f;
@@ -17,9 +20,8 @@ body {
 
 main {
     position: relative;
-    background-image: url(school.jpeg);
+    background-image: url(assets/school.jpeg);
     background-repeat: no-repeat;
-    top: 100px;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -39,6 +41,8 @@ main div {
     }
 
     P {
+        padding: 0px 60px;
+        text-align: center;
         font-size: 1.5rem;
     }
 }
@@ -49,10 +53,13 @@ header {
     left: 0;
     right: 0;
     height: 100px;
+    column-gap: 5%;
+    flex-shrink: 1;
     right: 0;
     background-color: #078f;
     width: 100%;
     position: fixed;
+
 }
 
 .logo img {
@@ -66,18 +73,20 @@ header nav {
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
-    column-gap: 30px;
+    flex-shrink: 1;
     font-size: 1.2rem;
+
+    margin-right: 5rem;
 }
 
 header nav {
-    column-gap: 30px;
-    text-wrap: nowrap;
+    column-gap: 20px;
 
     a {
         text-decoration: none;
         color: black;
         border-radius: 10px;
+        text-wrap: nowrap;
         transition: all .5s;
         padding: 5px 8px;
     }
@@ -87,6 +96,26 @@ header nav {
         scale: 1.05;
 
         border: 1px solid rgb(7, 7, 136);
+    }
+}
+
+.scroll-watcher {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(rgba(33, 105, 214, 0.062), rgb(110, 90, 148));
+    top: 100px;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scrollWatcher linear forwards;
+    animation-timeline: scroll();
+}
+
+@keyframes scrollWatcher {
+    to {
+        scale: 1 1;
     }
 }
 
@@ -107,28 +136,95 @@ header nav {
 
 .activities section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: wheat;
-    justify-content: space-between;
+    column-gap: 20px;
     width: 100%;
     border-radius: 10px;
     border: 2px solid;
     padding: 10px;
     height: 100%;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: 0%;
+    animation-range-end: 95%;
 
     img {
-        height: 200px;
+        height: 20rem;
         border: 2px solid;
-        width: 600px;
+        border-radius: 30px;
+        width: 20rem;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        scale: .7;
+        opacity: 0.3;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
     }
 }
 
 footer {
-    display: block;
-    color: white;
-    background-color: green;
-    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    height: fit-content;
     padding: 10px;
+    align-items: center;
+    justify-content: space-around;
 
+}
+
+#checkbox {}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#footer-left input {
+    border: 3px solid black;
+
+}
+
+#footer-left #email {
+    height: 35px;
+    margin-top: 5px;
+    width: 210px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#footer-left button {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.sites {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 20px;
+    justify-content: space-between;
+    column-gap: 10px;
+
+
+    img {
+        width: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }

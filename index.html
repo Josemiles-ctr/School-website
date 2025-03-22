@@ -12,16 +12,20 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.jpeg" alt="">
+            <img src="assets/logo.jpeg" alt="">
         </div>
         <nav>
             <a href="">HOME</a>
-            <a href="">ABOUT US</a>
+            <a href="#sports">ABOUT US</a>
             <a href="">ACADEMICS</a>
             <a href="">NEW $ EVENTS</a>
             <a href="">CONTACT US</a>
         </nav>
+        <div class="scroll-watcher">
+        </div>
     </header>
+    
+    
     <main>
         <div id="welcome-ms">
             <h1>Welcome to [Your School Name]! </h1>
@@ -39,36 +43,81 @@
     </main>
     <div class="activities">
         <h1>Activities</h1>
-        <section>
-            <img src="" alt="Activity image">
-            <h2>Activity Title</h2>
-            <p>Aactivity description</p>
+        <section id="sports">
+            <img src="assets/games.jpeg" alt="Activity image">
+            <div class="activity-details">
+                <h2>Activity Title</h2>
+            <p>Activity description</p>
+            </div>
         </section>
         <section>
-            <img src="" alt="Activity image">
-            <h2>Activity Title</h2>
-            <p>Aactivity description</p>
+            <img src="assets/debates.jpeg" alt="Activity image">
+            <div class="activity-details">
+                <h2>Activity Title</h2>
+            <p>Activity description</p>
+            </div>
         </section>
         <section>
-            <img src="" alt="Activity image">
-            <h2>Activity Title</h2>
-            <p>Aactivity description</p>
+            <img src="assets/party.jpeg" alt="Activity image">
+            <div class="activity-details">
+                <h2>Activity Title</h2>
+            <p>Activity description</p>
+            </div>
         </section>
         <section>
-            <img src="" alt="Activity image">
-            <h2>Activity Title</h2>
-            <p>Aactivity description</p>
+            <img src="assets/Tour.jpeg" alt="Activity image">
+            <div class="activity-details">
+                <h2>Activity Title</h2>
+            <p>Activity description</p>
+            </div>
         </section>
         <section>
-            <img src="" alt="Activity image">
-            <h2>Activity Title</h2>
-            <p>Aactivity description</p>
+            <img src="assets/poetry.jpeg" alt="Activity image">
+            <div class="activity-details">
+                <h2>Activity Title</h2>
+            <p>Activity description</p>
+            </div>
         </section>
     </div>
+    <hr>
     <footer>
-    <div>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, cupiditate doloribus nam sit, consequatur id delectus magnam, ullam dicta aut totam obcaecati. Ipsam ipsum illum maxime ducimus eligendi harum excepturi.</p>
+    <div id="footer-left">
+        <h2>Stay Connected with us</h2><br>
+        <label for="email">Enter Your Email:</label><br>
+        <input id="email" type="email" name="email" placeholder="email">
+        <button>Subscribe</button><br>
+        <label for="aggreement"><br>
+            <input id="checkbox" type="checkbox">
+            Yes, subscribe me to news letter
+
+        </label>
+    </div>
+    <div class="footer-middle">
+     <p>+256-415-634-999</p>
+     <p>Email : info@ourschool.com</p>
+     <div class="sites">
+        <img src="assets/facebook.png" alt="facebook Site">
+        <img src="assets/x.png" alt="X site">
+        <img src="assets/download.png" alt="Whatsapp Site">
+        <img src="assets/instagram.jpeg" alt="instagram Site">
+     </div>
+    </div>
+    <div class="footer-right">
+      <div class="right-upper">
+        <p>Privacy Policy</p>
+      <p>Accessiblity Statement</p>
+      <p>Terms & Conditions</p>
+      <p>Refund Policy</p>
+      </div>
+      <div class="right-lower">
+        <p>&copy; <span id="year"> </span> by School Name</p>
+        <p>Designed and Powered by Group O</p>
+      </div>
     </div>
     </footer>
+    <script>
+     let year=document.getElementById("year")
+     year.textContent=new Date().getFullYear()
+    </script>
 </body>
 </html>
