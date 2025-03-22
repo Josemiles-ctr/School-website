@@ -4,15 +4,16 @@ when A user chooses to click the theme fixed icon at position appromimately 30X5
 Respectively, the image content is changed to suit the theme(next)*/
 const desktopView = this.document.getElementById("desktop");
 const footer = document.getElementById("footer")
-const newHtml = ' <img id="open-close" src="assets/greenOpening.png" alt="toggle Nagitation bar">'
+const newHtml = ' <img id="open-close" class="open" src="assets/greenOpening.png" alt="toggle Nagitation bar">'
 const newNav = document.getElementById("mobile")
+newNav.style.display = "none"
 const navContent = `
             <ul>
                 <li>
                     <a href="">HOME</a>
                 </li>
                  <li>
-                    <a href="#sports">ABOUT US</a></li>
+                    <a href="">ABOUT US</a></li>
                  <li>
                     <a href="">ACADEMICS</a>
                  </li>
@@ -24,7 +25,7 @@ const navContent = `
             </ul>
             `
 desktopView.innerHTML = navContent
-
+// Selects the image element
 
 function changeTheme() {
     const themeChanger = document.getElementById("change-mode")
@@ -43,11 +44,25 @@ function resising() {
 
     if (window.innerWidth < 837) {
         newNav.innerHTML = desktopView.innerHTML
-        newNav.style.display = "none"
         desktopView.innerHTML = newHtml;
 
         footer.style.flexDirection = "column"
         footer.style.rowGap = "20px"
+        const openClose = document.getElementById("open-close");
+        openClose.onclick = function () {
+            const src1 = 'assets/greenOpening.png';
+            const src2 = 'assets/greenCancel.jpeg';
+
+            // You should see "Yes" now
+
+            if (openClose.src.includes(src1)) { // Proper way to check image src
+                newNav.style.display = "block";
+                openClose.src = src2;
+            } else {
+                newNav.style.display = "none";
+                openClose.src = src1;
+            }
+        }
     } else {
         desktopView.innerHTML = navContent;
         footer.style.flexDirection = "row"
@@ -56,17 +71,3 @@ function resising() {
 }; resising()
 window.addEventListener('resize', resising)
 
-// function toggleNav() {
-//     const openClose = document.getElementById("open-close")
-//     const src1 = 'assets/greenOpening.png';
-//     const src2 = 'assets/greenCancel.jpeg'
-//     if (newHtml.src === src1) {
-//         newNav.style.display = "block"
-//         newHtml.src = src2;
-//     } else {
-//         newNav.style.display = "none"
-//         newHtml.src = src1
-//     }
-
-
-// }
