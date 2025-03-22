@@ -66,6 +66,7 @@ function resising() {
     } else {
         desktopView.innerHTML = navContent;
         footer.style.flexDirection = "row"
+        newNav.style.display = "none";
     }
     // toggleNav()
 }; resising()
