@@ -57,6 +57,7 @@ main div {
 
     h1 {
         font-size: 3rem;
+        text-align: center;
     }
 
     P {
@@ -64,6 +65,18 @@ main div {
         text-align: center;
         font-size: 1.5rem;
     }
+}
+
+figure div {
+    line-height: 2rem;
+
+
+    section {
+        box-shadow: 1px 2px 3px 4px gray;
+        border-radius: 10px;
+        margin: 5px 10px;
+    }
+
 }
 
 header {
@@ -185,6 +198,7 @@ header #desktop {
 
 .activities-title {
     text-align: center;
+    margin-top: 40px;
 }
 
 footer {
