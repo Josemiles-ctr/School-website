@@ -75,6 +75,7 @@ window.addEventListener('resize', function () {
     if (window.innerWidth >= 837) {
         desktopView.innerHTML = navContent;
         newNav.style.display = "none";
+        footer.style.flexDirection = "row"
     } else {
         resising()
     }
