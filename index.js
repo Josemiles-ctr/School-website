@@ -43,13 +43,13 @@ function changeTheme() {
 function resising() {
 
     if (window.innerWidth < 837) {
-        newNav.innerHTML = desktopView.innerHTML
+        newNav.innerHTML = navContent
         desktopView.innerHTML = newHtml;
 
         footer.style.flexDirection = "column"
         footer.style.rowGap = "20px"
         const openClose = document.getElementById("open-close");
-        openClose.onclick = function () {
+        openClose.onclick = function opening() {
             const src1 = 'assets/greenOpening.png';
             const src2 = 'assets/greenCancel.jpeg';
 
@@ -64,11 +64,19 @@ function resising() {
             }
         }
     } else {
-        desktopView.innerHTML = navContent;
-        footer.style.flexDirection = "row"
         newNav.style.display = "none";
+        newNav.innerHTML = navContent;
+        footer.style.flexDirection = "row"
+
     }
     // toggleNav()
 }; resising()
-window.addEventListener('resize', resising)
+window.addEventListener('resize', function () {
+    if (window.innerWidth >= 837) {
+        desktopView.innerHTML = navContent;
+        newNav.style.display = "none";
+    } else {
+        resising()
+    }
+})
 
