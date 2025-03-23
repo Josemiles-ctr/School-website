@@ -180,7 +180,7 @@ header {
 #mobile ul {
     display: flex;
     position: fixed;
-    top: 100px;
+    top: 80px;
     flex-direction: column;
     left: 0;
     list-style: none;
@@ -214,6 +214,7 @@ header {
     li a:hover {
         color: rgb(33, 33, 100);
         scale: 1.05;
+        background-color: rgb(3, 68, 3);
 
         border: 1px solid rgb(7, 7, 136);
     }
@@ -259,8 +260,9 @@ header #desktop {
     }
 
     a:hover {
-        color: rgb(33, 33, 100);
+        color: rgb(59, 59, 129);
         scale: 1.05;
+        background-color: rgb(3, 68, 3);
 
         border: 1px solid rgb(7, 7, 136);
     }
