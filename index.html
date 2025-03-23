@@ -47,44 +47,47 @@
                     <img src="assets/games.jpeg" alt="Activity image">
             <div class="activity-details">
                 <h2>Games and Sports</h2>
-            <p>At [School Name], sports are more than just games—they are a way of life! Our school offers a diverse range of athletic programs designed to develop students' physical fitness, teamwork, and leadership skills. Whether on the field, court, or track, our student-athletes continuously push their limits to achieve greatness.</p>
+            <p class="descMs">Sports are more than just games—they are a way of life! Our school offers a diverse range of athletic programs designed to develop students' physical fitness, teamwork, and leadership skills. Whether on the field, court, or track, our student-athletes continuously push their limits to achieve greatness.</p>
             </div>
         </section>
         <section>
             <img src="assets/debates.jpeg" alt="Activity image">
             <div class="activity-details">
                 <h2>Debates</h2>
-            <p>At [School Name], we believe that the ability to think critically, express ideas confidently, and engage in meaningful discussions is essential for student development. Our debate programs provide a platform for students to sharpen their communication skills, enhance their knowledge, and build confidence while tackling real-world issues.</p>
+            <p class="descMs">We believe that the ability to think critically, express ideas confidently, and engage in meaningful discussions is essential for student development. Our debate programs provide a platform for students to sharpen their communication skills, enhance their knowledge, and build confidence while tackling real-world issues.</p>
             </div>
         </section>
         <section>
             <img src="assets/party.jpeg" alt="Activity image">
             <div class="activity-details">
                 <h2>Welcoming And Farewell Party</h2>
-            <p>At [School Name], we believe in making every moment special, whether we’re bidding farewell to our graduating students or welcoming new members into our school family. These events are filled with joy, nostalgia, and excitement, creating lasting memories for everyone involved.</p>
+            <p class="descMs">We believe in making every moment special, whether we’re bidding farewell to our graduating students or welcoming new members into our school family. These events are filled with joy, nostalgia, and excitement, creating lasting memories for everyone involved.</p>
             </div>
         </section>
         <section>
             <img src="assets/Tour.jpeg" alt="Activity image">
             <div class="activity-details">
                 <h2>Academic Tours</h2>
-            <p>At [School Name], we believe that education isn’t confined to books and classrooms. Our school tours provide students with exciting opportunities to explore new places, gain real-world knowledge, and create unforgettable memories. Whether it’s an educational field trip, a cultural excursion, or an adventurous outdoor journey, our tours are designed to inspire and broaden horizons.</p>
+            <p class="descMs">We believe that education isn’t confined to books and classrooms. Our school tours provide students with exciting opportunities to explore new places, gain real-world knowledge, and create unforgettable memories. Whether it’s an educational field trip, a cultural excursion, or an adventurous outdoor journey, our tours are designed to inspire and broaden horizons.</p>
             </div>
         </section>
         </div>
         
     </figure>
+    <hr>
     <footer id="footer">
     <div id="footer-left">
         <h2>Stay Connected with us</h2><br>
-        <label for="email">Enter Your Email:</label><br>
+        <form action="" method="post" onsubmit="handleSubmit(event)">
+            <label for="email">Enter Your Email:</label><br>
         <input id="email" type="email" name="email" placeholder="email"><br><br>
-        <button id="subscribe-btn">Subscribe</button><br>
+        <input id="subscribe-btn" type="submit" value="Subscribe">
         <label for="checkbox"><br>
             <input id="checkbox" type="checkbox">
             Yes, subscribe me to news letter
 
         </label>
+        </form>
     </div>
     <div class="footer-middle">
      <p>+256-415-634-999</p>
@@ -112,6 +115,12 @@
     <script>
      let year=document.getElementById("year")
      year.textContent=new Date().getFullYear()
+     function handleSubmit(ele){
+        const subscribeBtn = document.getElementById("subscribe-btn");
+        subscribeBtn.classList.add("subscribed")
+        subscribeBtn.textContent = "Subscribed"
+        ele.preventDefault()
+     }
     </script>
     <script src="index.js"></script>
 </body>
