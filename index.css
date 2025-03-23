@@ -89,7 +89,10 @@ figure div {
         }
 
         p {
-            line-height: 25px;
+
+            line-height: 23px;
+            max-lines: 4;
+            overflow-wrap: anywhere;
         }
 
         margin-top: 20px;
@@ -101,6 +104,7 @@ figure div {
         box-shadow: 1px 0px 1px 2px grey;
         display: flex;
         opacity: 1;
+        flex-direction: column;
         transform: translateX(100%);
         /* Start position from the right */
         animation: slideInFromRight 20s infinite;
