@@ -76,8 +76,12 @@ window.addEventListener('resize', function () {
         desktopView.innerHTML = navContent;
         newNav.style.display = "none";
         footer.style.flexDirection = "row"
+
     } else {
         resising()
+        if (newNav.style.display === "block") {
+            this.document.getElementById("open-close").src = 'assets/greenCancel.jpeg';
+        }
     }
 })
 

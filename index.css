@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
+    transition: all .5s;
 
 
 }
@@ -87,7 +88,12 @@ header {
     background-color: rgb(34, 138, 34);
     width: 100%;
     position: fixed;
+    transition: all .7s;
 
+}
+
+#mobile {
+    transition: all 2s;
 }
 
 #mobile ul {
@@ -110,6 +116,7 @@ header {
     padding-top: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition: all .7s;
 
     li a {
         text-decoration: none;
@@ -132,7 +139,7 @@ header {
 }
 
 #open-close {
-    height: 90px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
     cursor: pointer;
@@ -152,11 +159,10 @@ header #desktop ul {
     font-weight: 700;
     flex-shrink: 1;
     font-size: 1.2rem;
-
-    margin-right: 5rem;
 }
 
 header #desktop {
+    transition: all .7s;
 
     a {
         text-decoration: none;
@@ -206,9 +212,12 @@ header #desktop {
 
 footer {
     display: flex;
+    position: relative;
+    width: 100vw;
     margin-top: 20px;
     color: white;
     height: fit-content;
+    right: 0;
     background-color: black;
     font-size: large;
     padding: 10px;
