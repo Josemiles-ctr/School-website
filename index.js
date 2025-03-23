@@ -25,6 +25,11 @@ const navContent = `
             </ul>
             `
 desktopView.innerHTML = navContent
+function hundleSubmit(event) {
+    event.preventDefault();
+    subscribeBtn.classList.add("subscribed")
+    subscribeBtn.textContent = "Subscribed"
+}
 // Selects the image element
 
 function changeTheme() {
