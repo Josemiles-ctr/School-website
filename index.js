@@ -10,25 +10,30 @@ newNav.style.display = "none"
 const navContent = `
             <ul>
                 <li>
-                    <a href="">HOME</a>
+                    <a href="index.html">HOME</a>
                 </li>
                  <li>
-                    <a href="">ABOUT US</a></li>
+                    <a href="about.html">ABOUT US</a></li>
                  <li>
-                    <a href="">ACADEMICS</a>
+                    <a href="academics.html">ACADEMICS</a>
                  </li>
                  <li>
-                    <a href="">NEW $ EVENTS</a></li>
+                    <a href="newsEvents.html">NEW $ EVENTS</a></li>
                  <li>
-                    <a href="">CONTACT US</a>
+                    <a href="contactUs.html">CONTACT US</a>
                 </li>
             </ul>
             `
-desktopView.innerHTML = navContent
-function hundleSubmit(event) {
-    event.preventDefault();
-    subscribeBtn.classList.add("subscribed")
-    subscribeBtn.textContent = "Subscribed"
+desktopView.innerHTML = navContent;
+let year = document.getElementById("year")
+year.textContent = new Date().getFullYear()
+function handleSubmit(ele) {
+    const subscribeBtn = document.getElementById("subscribe-btn");
+    subscribeBtn.value = "Subscribed"
+    subscribeBtn.style.backgroundColor = "red"
+    subscribeBtn.style.color = "white";
+    window.alert("Thanks for subscribing to our monthly news Letter")
+    ele.preventDefault()
 }
 // Selects the image element
 

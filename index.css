@@ -5,7 +5,7 @@
 }
 
 body {
-    height: fit-content;
+    height: 100%;
     font-family: "Roboto", sans-serif;
     margin: 0;
     margin-top: 75px;
@@ -277,6 +277,7 @@ header #desktop {
     background-color: rgb(36, 33, 33);
     top: 75px;
     scale: 0 1;
+    bottom: 0;
     transform-origin: left;
     animation: scrollWatcher linear forwards;
     animation-timeline: scroll();

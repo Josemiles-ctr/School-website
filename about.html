@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpeg" alt="">
+        </div>
+        <nav id="desktop">
+        </nav>
+        <div class="scroll-watcher">
+        </div>
+    </header>
+    <nav id="mobile"></nav>
+<h1>ABOUT US PAGE</h1>
+    
+    <div class="theme">
+            <img id="change-mode" onclick="changeTheme()" src="assets/dark.png" title="Change Theme" alt="Theme changer">
+    </div>
+    <hr>
+    <footer id="footer">
+    <div id="footer-left">
+        <h2>Stay Connected with us</h2><br>
+        <form action="" method="post" onsubmit="handleSubmit(event)">
+            <label for="email">Enter Your Email:</label><br>
+        <input id="email" type="email" name="email" placeholder="email"><br><br>
+        <input id="subscribe-btn" type="submit" value="Subscribe">
+        <label for="checkbox"><br>
+            <input id="checkbox" type="checkbox">
+            Yes, subscribe me to news letter
+
+        </label>
+        </form>
+    </div>
+    <div class="footer-middle">
+     <p>+256-415-634-999</p>
+     <p>Email : info@ourschool.com</p>
+     <div class="sites">
+        <img src="assets/facebook.png" alt="facebook Site">
+        <img src="assets/x.png" alt="X site">
+        <img src="assets/download.png" alt="Whatsapp Site">
+        <img src="assets/instagram.jpeg" alt="instagram Site">
+     </div>
+    </div>
+    <div class="footer-right">
+      <div class="right-upper">
+        <p>Privacy Policy</p>
+      <p>Accessiblity Statement</p>
+      <p>Terms & Conditions</p>
+      <p>Refund Policy</p>
+      </div>
+      <div class="right-lower">
+        <p>&copy; <span id="year"> </span> by School Name</p>
+        <p>Designed and Powered by Group O</p>
+      </div>
+    </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>
