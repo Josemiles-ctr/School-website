@@ -1,11 +1,10 @@
 
+const helo = document.querySelector(".say-hello");
 function formColumn() {
-    const helo = document.querySelector(".say-hello");
     helo.style.flexDirection = "column"
     names.classList.remove("name-styles");
 }
 function formRow() {
-    const helo = document.querySelector(".say-hello");
     helo.style.flexDirection = "row"
     names.classList.add("name-styles");
 }
@@ -23,6 +22,8 @@ window.addEventListener('resize', function () {
     if (window.innerWidth >= 837) {
         formRow()
 
+    } else {
+        formColumn()
     }
 })
 
