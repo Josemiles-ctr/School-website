@@ -3,17 +3,30 @@
     column-gap: 1rem;
     margin-top: 5rem;
     box-shadow: 1px 1px 1px 1px grey;
+    background: -moz-linear-gradient(to left, white, whitesmoke, rgb(179, 175, 175));
+    margin-left: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 3rem;
     border-radius: .2rem;
     padding: 3rem 2rem;
-    font-size: large;
+    font-size: 1.1rem;
+    border-bottom: none;
+
+    h1 {
+        text-shadow: 2px 3px black;
+        border-bottom: 1px solid grey;
+        color: green;
+        text-emphasis-style: calc(scale(1.1));
+        margin-bottom: 1rem;
+    }
 }
 
 .icons img {
     height: 30px;
     cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .phone-email {
@@ -31,11 +44,30 @@
     flex-direction: column;
     border-radius: .2rem;
 
-    input {}
+    textArea {
+        font-size: 1rem;
+        resize: none;
+    }
+
+    input {
+        font-size: .9rem;
+    }
 
     .names {
         display: flex;
         column-gap: 2rem;
         margin-bottom: 1rem;
+    }
+
+    #submit {
+        background-color: rgb(14, 92, 14);
+        color: white;
+        font-size: larger;
+        margin-top: 2rem;
+        padding: 10px 10px;
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
     }
 }
