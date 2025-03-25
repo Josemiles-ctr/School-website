@@ -21,7 +21,54 @@
         </div>
     </header>
     <nav id="mobile"></nav>
-<h1>CONTACT US PAGE</h1>
+<div class="say-hello">
+    <div class="left-ms">
+        <h1>Say Hello</h1>
+        <p>Have questions, suggestions, or need more information about our school? Feel free to reach out! Whether you're a parent, student, or visitor, we’re here to help.</p>
+        <div class="phone-email">
+            <div class="phone">
+                <p>Phone:</p>
+            <p>+256-415-634-999</p>
+            </div>
+            <div class="email">
+                <p>Email:</p>
+                <p>info@ourschool.com</p>
+            </div>
+        </div>
+        <div class="socials">
+            <p>Social Media:</p>
+            <div class="icons">
+            
+                    <img src="assets/facebook.png" alt="facebook Site">
+                    <img src="assets/x.png" alt="X site">
+                    <img src="assets/download.png" alt="Whatsapp Site">
+                    <img src="assets/instagram.jpeg" alt="instagram Site">
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="right-form">
+        <form action="" id="contact-form">
+          <div class="names">
+            <div>
+                <label for="first-name">First Name:</label><br>
+            <input type="text" name="first-name" id="first-name" required minlength="3"><br>
+            </div>
+             <div>
+                <label for="last-name">Last Name:</label><br>
+                <input type="text" name="last-name" id="last-name" required minlength="3">
+             </div>
+          </div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required><br>
+          <label for="phone">Phone:</label>
+          <input type="tel" name="phone" pattern="[0-9]{10}" id="phone" title="Enter a ten digit phone number"><br>
+          <label for="message">Leave a message:</label><br>
+          <textarea name="message" id="message" rows="10" placeholder="Leave a message"></textarea>
+        </form>
+    </div>
+</div>
     
     <div class="theme">
             <img id="change-mode" onclick="changeTheme()" src="assets/dark.png" title="Change Theme" alt="Theme changer">
