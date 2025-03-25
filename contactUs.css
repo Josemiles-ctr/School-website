@@ -2,7 +2,7 @@
     display: flex;
     column-gap: 1rem;
     margin-top: 5rem;
-    box-shadow: 1px 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px 2px rgb(240, 235, 235);
     background: -moz-linear-gradient(to left, white, whitesmoke, rgb(179, 175, 175));
     margin-left: 10px;
     background: -moz-linear-gradient(to left, white, whitesmoke, rgb(179, 175, 175));
@@ -22,6 +22,7 @@
         color: green;
         text-emphasis-style: calc(scale(1.1));
         margin-bottom: 1rem;
+
     }
 }
 
@@ -49,7 +50,7 @@
 #contact-form {
     padding: 2rem 1rem;
     width: 100%;
-    box-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px 2px rgba(219, 219, 219, 0.993);
     display: flex;
     flex-direction: column;
     border-radius: .2rem;
@@ -97,11 +98,33 @@
     font-size: larger;
     font-weight: 6500;
 
+    p {
+        animation: show both;
+        animation-timeline: view(75% 5%);
+    }
+
     h1 {
         text-shadow: 2px 3px black;
         border-bottom: 1px solid grey;
         color: green;
         text-emphasis-style: calc(scale(1.1));
         margin-bottom: 1rem;
+        animation: show both;
+        animation-timeline: view(75% 5%);
     }
+}
+
+@keyframes show {
+    from {
+        transform: translateY(200px);
+        scale: .3;
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        scale: 1;
+        opacity: 1;
+    }
+
 }
