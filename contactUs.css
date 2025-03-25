@@ -8,6 +8,7 @@
     background: -moz-linear-gradient(to left, white, whitesmoke, rgb(179, 175, 175));
     margin-left: 10px;
     margin-left: 10px;
+    justify-content: space-between;
     margin-right: 10px;
     margin-bottom: 3rem;
     border-radius: .2rem;

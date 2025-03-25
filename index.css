@@ -53,6 +53,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: local;
     height: 100vh;
     width: 100vw;
 }
@@ -293,8 +294,12 @@ header #desktop {
 .activities-title {
     text-align: center;
     margin-top: 40px;
+    text-shadow: 2px 3px grey;
+    text-decoration: underline;
     animation: show both;
     animation-timeline: view(75% 100px);
+    animation-duration: 2s;
+    animation-delay: 2s;
 }
 
 @keyframes show {
@@ -302,11 +307,13 @@ header #desktop {
         transform: translateY(200px);
         scale: .3;
         opacity: 0;
+        color: green;
     }
 
     to {
         transform: translateY(0);
         scale: 1;
+        color: green;
         opacity: 1;
     }
 
