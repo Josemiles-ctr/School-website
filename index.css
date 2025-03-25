@@ -202,8 +202,8 @@ header {
     li a {
         text-decoration: none;
         color: black;
-        font-weight: 600;
-        font-size: 1.3rem;
+        font-weight: 750;
+        font-size: 1.1rem;
         cursor: pointer;
         border-radius: 10px;
         transition: all .5s;
@@ -212,9 +212,7 @@ header {
     }
 
     li a:hover {
-        color: rgb(33, 33, 100);
         scale: 1.05;
-        background-color: rgb(3, 68, 3);
 
         border: 1px solid rgb(7, 7, 136);
     }
@@ -260,9 +258,7 @@ header #desktop {
     }
 
     a:hover {
-        color: rgb(59, 59, 129);
         scale: 1.05;
-        background-color: rgb(3, 68, 3);
 
         border: 1px solid rgb(7, 7, 136);
     }
