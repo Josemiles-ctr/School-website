@@ -288,6 +288,23 @@ header #desktop {
 .activities-title {
     text-align: center;
     margin-top: 40px;
+    animation: show both;
+    animation-timeline: view(75% 100px);
+}
+
+@keyframes show {
+    from {
+        transform: translateY(200px);
+        scale: .3;
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        scale: 1;
+        opacity: 1;
+    }
+
 }
 
 footer {
