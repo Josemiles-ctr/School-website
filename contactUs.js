@@ -10,7 +10,7 @@ function formRow() {
     names.classList.add("name-styles");
 }
 //Changing the navigation content at smaller screen sizes
-function resising() {
+function contactResize() {
 
     if (window.innerWidth < 837) {
         formColumn();
@@ -18,7 +18,7 @@ function resising() {
     }
 
     // toggleNav()
-}; resising()
+}; contactResize()
 window.addEventListener('resize', function () {
     if (window.innerWidth >= 837) {
         formRow()

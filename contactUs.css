@@ -49,7 +49,7 @@
 #contact-form {
     padding: 2rem 1rem;
     width: 100%;
-    box-shadow: 0 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px grey;
     display: flex;
     flex-direction: column;
     border-radius: .2rem;
