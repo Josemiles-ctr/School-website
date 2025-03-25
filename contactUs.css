@@ -5,6 +5,8 @@
     box-shadow: 1px 1px 1px 1px grey;
     background: -moz-linear-gradient(to left, white, whitesmoke, rgb(179, 175, 175));
     margin-left: 10px;
+    background: -moz-linear-gradient(to left, white, whitesmoke, rgb(179, 175, 175));
+    margin-left: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 3rem;
@@ -26,15 +28,15 @@
 .icons img {
     height: 30px;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-
-
+    transition: all .5s;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+    margin-right: .3rem;
 }
 
-.icons :is(img):hover {
+.icons img:hover {
+    cursor: pointer;
     scale: 1.1;
-    transform-box: view-box;
 }
 
 .phone-email {
@@ -79,5 +81,27 @@
         border: none;
         cursor: pointer;
         font-weight: 600;
+        transition: all .5s;
+    }
+
+    #submit:hover {
+
+        background-color: rgb(14, 68, 14);
+        font-size: x-large;
+        margin-bottom: -.2rem;
+    }
+}
+
+.visit-us {
+    padding: 10px 4rem;
+    font-size: larger;
+    font-weight: 6500;
+
+    h1 {
+        text-shadow: 2px 3px black;
+        border-bottom: 1px solid grey;
+        color: green;
+        text-emphasis-style: calc(scale(1.1));
+        margin-bottom: 1rem;
     }
 }
