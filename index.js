@@ -37,16 +37,6 @@ function handleSubmit(ele) {
     ele.preventDefault()
 }
 // Selects the image 
-function formColumn() {
-    const helo = document.querySelector(".say-hello");
-    helo.style.flexDirection = "column"
-    names.classList.remove("name-styles");
-}
-function formRow() {
-    const helo = document.querySelector(".say-hello");
-    helo.style.flexDirection = "row"
-    names.classList.add("name-styles");
-}
 
 function changeTheme() {
     const themeChanger = document.getElementById("change-mode")
@@ -64,7 +54,6 @@ function changeTheme() {
 function resising() {
 
     if (window.innerWidth < 837) {
-        formColumn();
         newNav.innerHTML = navContent
         desktopView.innerHTML = newHtml;
 
@@ -100,7 +89,7 @@ window.addEventListener('resize', function () {
         desktopView.innerHTML = navContent;
         newNav.style.display = "none";
         footer.style.flexDirection = "row"
-        formRow()
+
 
     } else {
         resising()
