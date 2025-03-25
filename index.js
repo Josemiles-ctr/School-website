@@ -7,6 +7,7 @@ const footer = document.getElementById("footer")
 const newHtml = ' <img id="open-close" class="open" src="assets/greenOpening.png" alt="toggle Nagitation bar">'
 const newNav = document.getElementById("mobile")
 newNav.style.display = "none"
+const names = document.querySelector(".names")
 const navContent = `
             <ul>
                 <li>
@@ -35,7 +36,17 @@ function handleSubmit(ele) {
     window.alert("Thanks for subscribing to our monthly news Letter")
     ele.preventDefault()
 }
-// Selects the image element
+// Selects the image 
+function formColumn() {
+    const helo = document.querySelector(".say-hello");
+    helo.style.flexDirection = "column"
+    names.classList.remove("name-styles");
+}
+function formRow() {
+    const helo = document.querySelector(".say-hello");
+    helo.style.flexDirection = "row"
+    names.classList.add("name-styles");
+}
 
 function changeTheme() {
     const themeChanger = document.getElementById("change-mode")
@@ -53,6 +64,7 @@ function changeTheme() {
 function resising() {
 
     if (window.innerWidth < 837) {
+        formColumn();
         newNav.innerHTML = navContent
         desktopView.innerHTML = newHtml;
 
@@ -79,6 +91,8 @@ function resising() {
         footer.style.flexDirection = "row"
 
     }
+
+
     // toggleNav()
 }; resising()
 window.addEventListener('resize', function () {
@@ -86,6 +100,7 @@ window.addEventListener('resize', function () {
         desktopView.innerHTML = navContent;
         newNav.style.display = "none";
         footer.style.flexDirection = "row"
+        formRow()
 
     } else {
         resising()
