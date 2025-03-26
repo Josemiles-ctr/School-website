@@ -55,18 +55,17 @@ main {
         font-weight: 700;
     }
 
-    width: 100%;
+    width: cover;
     /* Or any specific width */
     height: fit-content;
-    padding-bottom: 100PX;
-    padding-top: 100px;
+    padding-bottom: 50PX;
+    padding-top: 50px;
     /* Or any specific height */
     background-image: url('assets/background2.jpeg');
     background-size: cover;
     background-position: center;
 
     font-weight: 700;
-    backdrop-filter: blur(1000px);
     background-repeat: no-repeat;
 
     p {
@@ -77,7 +76,7 @@ main {
 
 .moto {
     color: green;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(2px);
     padding: 8px 5px;
     border-radius: 8px;
 }
