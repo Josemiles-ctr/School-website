@@ -2,12 +2,62 @@
 This funtion toogles the theme of the body element(window.body)
 when A user chooses to click the theme fixed icon at position appromimately 30X50 of the bottom right
 Respectively, the image content is changed to suit the theme(next)*/
+
+const header = document.getElementById("header");
+header.innerHTML = `
+  <div class="logo">
+            <img src="assets/logo2.jpeg" alt="">
+        </div>
+        <nav id="desktop">
+        </nav>
+        <div class="scroll-watcher">
+        </div>
+`
 const desktopView = this.document.getElementById("desktop");
-const footer = document.getElementById("footer")
+const footer = document.getElementById("footer");
 const newHtml = ' <img id="open-close" class="open" src="assets/greenOpening.png" alt="toggle Nagitation bar">'
 const newNav = document.getElementById("mobile")
 newNav.style.display = "none"
 const names = document.querySelector(".names")
+
+footer.innerHTML = `
+<div id="footer-left">
+        <h2>Stay Connected with us</h2><br>
+        <form action="" method="post" onsubmit="handleSubmit(event)">
+            <label for="email">Enter Your Email:</label><br>
+        <input id="email" type="email" name="email" placeholder="email"><br><br>
+        <input id="subscribe-btn" type="submit" value="Subscribe">
+        <label for="checkbox"><br>
+            <input id="checkbox" type="checkbox">
+            Yes, subscribe me to news letter
+
+        </label>
+        </form>
+    </div>
+    <div class="footer-middle">
+     <p>+256-415-634-999</p>
+     <p>Email : info@mengoseniorschool.com</p>
+     <div class="sites">
+        <img src="assets/facebook.png" alt="facebook Site">
+        <img src="assets/x.png" alt="X site">
+        <img src="assets/download.png" alt="Whatsapp Site">
+        <img src="assets/instagram.jpeg" alt="instagram Site">
+     </div>
+    </div>
+    <div class="footer-right">
+      <div class="right-upper">
+        <p>Privacy Policy</p>
+      <p>Accessiblity Statement</p>
+      <p>Terms & Conditions</p>
+      <p>Refund Policy</p>
+      </div>
+      <div class="right-lower">
+        <p>&copy; <span id="year"> </span> by Mengo Senior School</p>
+        <p>Designed and Powered by Group O</p>
+      </div>
+    </div>
+`
+
 const navContent = `
             <ul>
                 <li>

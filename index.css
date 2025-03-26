@@ -48,14 +48,38 @@ img {
 }
 
 main {
-    position: relative;
-    background-image: url(assets/school.jpeg);
-    background-repeat: no-repeat;
+
+    h1,
+    p {
+        backdrop-filter: blur(5px);
+        font-weight: 700;
+    }
+
+    width: 100%;
+    /* Or any specific width */
+    height: fit-content;
+    padding-bottom: 100PX;
+    padding-top: 100px;
+    /* Or any specific height */
+    background-image: url('assets/background2.jpeg');
     background-size: cover;
     background-position: center;
-    background-attachment: local;
-    height: 100vh;
-    width: 100vw;
+
+    font-weight: 700;
+    backdrop-filter: blur(1000px);
+    background-repeat: no-repeat;
+
+    p {
+        font-weight: 700;
+        font-size: x-large;
+    }
+}
+
+.moto {
+    color: green;
+    backdrop-filter: blur(20px);
+    padding: 8px 5px;
+    border-radius: 8px;
 }
 
 .main-content,
