@@ -99,6 +99,7 @@ function changeTheme() {
     } else {
         themeChanger.setAttribute('src', dark)
     }
+    document.getElementById("main").classList.toggle('main-dark')
 }
 //Changing the navigation content at smaller screen sizes
 function resising() {
