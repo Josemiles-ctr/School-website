@@ -1,0 +1,21 @@
+.welcome {
+    position: relative;
+
+    h1 {
+        color: green;
+        margin-top: 30px;
+        background: gray;
+        padding: 50px 30px;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+    }
+
+
+
+    p {
+        letter-spacing: 1px;
+        text-overflow: ellipsis;
+    }
+}

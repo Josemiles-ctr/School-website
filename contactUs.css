@@ -1,12 +1,17 @@
+body {
+    background-image: url(assets/background2.jpeg);
+    background-repeat: no-repeat;
+    object-position: center;
+    background-size: contain;
+
+    object-fit: cover;
+}
+
 .say-hello {
     display: flex;
     column-gap: 1rem;
     margin-top: 5rem;
-    box-shadow: 1px 1px 1px 2px rgb(240, 235, 235);
-    background: -moz-linear-gradient(to left, white, whitesmoke, rgb(179, 175, 175));
-    margin-left: 10px;
-    background: -moz-linear-gradient(to left, white, whitesmoke, rgb(179, 175, 175));
-    margin-left: 10px;
+    box-shadow: 1px 1px 1px 2px rgb(88, 85, 85);
     margin-left: 10px;
     justify-content: space-between;
     margin-right: 10px;
@@ -16,6 +21,7 @@
     font-size: 1.1rem;
     overflow-x: hidden;
     border-bottom: none;
+    background-image: linear-gradient(rgb(105, 99, 99), rgb(71, 71, 107), rgb(184, 184, 133), grey);
 
     h1 {
         text-shadow: 2px 3px black;
