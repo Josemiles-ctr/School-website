@@ -68,6 +68,9 @@ const navContent = `
                  <li>
                     <a href="academics.html">ACADEMICS</a>
                  </li>
+                  <li>
+                    <a href="gallery.html">GALLERY</a>
+                 </li>
                  <li>
                     <a href="newsEvents.html">NEW $ EVENTS</a></li>
                  <li>

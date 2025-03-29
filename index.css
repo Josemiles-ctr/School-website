@@ -45,6 +45,7 @@ img {
 
 #welcome-ms {
     margin-top: 20px;
+    color: black;
 }
 
 .theme {
@@ -62,12 +63,10 @@ img {
 }
 
 .main {
-    color: #e0e0e0;
-
-    h1,
     p {
         backdrop-filter: blur(5px);
         font-weight: 700;
+        color: black;
     }
 
     width: cover;
