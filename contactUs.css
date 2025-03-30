@@ -26,9 +26,8 @@ body {
     background-color: rgb(153, 150, 150);
 
     h1 {
-        text-shadow: 2px 3px black;
         border-bottom: 1px solid grey;
-        color: green;
+        color: rgb(41, 88, 41);
         text-emphasis-style: calc(scale(1.1));
         margin-bottom: 1rem;
 
@@ -68,6 +67,8 @@ body {
     textArea {
         font-size: 1rem;
         resize: none;
+        border-radius: 5px;
+        border: none;
     }
 
     input {
@@ -118,9 +119,8 @@ body {
     }
 
     h1 {
-        text-shadow: 2px 3px black;
         border-bottom: 1px solid grey;
-        color: green;
+        color: rgb(25, 99, 25);
         text-emphasis-style: calc(scale(1.1));
         margin-bottom: 1rem;
         animation: show both;
