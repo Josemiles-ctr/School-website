@@ -68,6 +68,9 @@ const navContent = `
                  <li>
                     <a href="academics.html">ACADEMICS</a>
                  </li>
+                  <li>
+                    <a href="gallery.html">GALLERY</a>
+                 </li>
                  <li>
                     <a href="newsEvents.html">NEW $ EVENTS</a></li>
                  <li>
@@ -99,6 +102,7 @@ function changeTheme() {
     } else {
         themeChanger.setAttribute('src', dark)
     }
+    document.getElementById("main").classList.toggle('main-dark')
 }
 //Changing the navigation content at smaller screen sizes
 function resising() {
