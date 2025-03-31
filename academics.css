@@ -22,21 +22,36 @@ p {
 
 }
 
-.our {
-    font-size: 1rem;
-}
+.our {}
 
 .pictures {
+    height: fit-content;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    justify-content: space-between;
-    grid: 1fr 1fr 1fr;
-    padding-left: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    /* Adds spacing between items */
+    width: 100%;
+    background: lightgray;
+    padding: 10px;
+
 
     div {
-        height: 100px;
-        width: 100px;
-        background-color: aqua;
+        background: steelblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        height: 300px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+
+        img {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            margin-top: -10px;
+            border-radius: 50%;
+            background-color: aliceblue;
+        }
     }
 }
 
@@ -117,7 +132,7 @@ main ul {
 
     li {
         margin-bottom: 20px;
-        font-size: 1rem;
+
     }
 }
 
