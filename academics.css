@@ -22,8 +22,6 @@ p {
 
 }
 
-.our {}
-
 .pictures {
     height: fit-content;
     display: grid;
@@ -38,24 +36,23 @@ p {
     div {
         background: steelblue;
         color: white;
+        padding-top: 10px;
         padding: 20px;
-        text-align: center;
-        height: 300px;
         font-size: 1.2rem;
+        height: 420px;
         border-radius: 5px;
+        text-align: center;
+        justify-content: start;
 
-        img {
-            height: 200px;
-            width: 200px;
-            border: 1px solid;
-            margin-top: -10px;
-            border-radius: 50%;
-            background-color: aliceblue;
-        }
     }
 }
 
-figure,
+.member {
+    img {
+        border-radius: 500px;
+    }
+}
+
 .assessment,
 .special-programs,
 .academic-support,
