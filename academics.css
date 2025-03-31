@@ -7,6 +7,10 @@ p {
 
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .our {
     font-size: 1.2rem;
 }
