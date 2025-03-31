@@ -7,13 +7,8 @@ p {
 
 }
 
-body {
-    overflow-x: hidden;
-    width: 100%;
-}
-
 .our {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .pictures {
@@ -52,7 +47,7 @@ figure,
     >h1 {
         color: rgb(20, 63, 20);
         margin-top: 30px;
-        padding: 50px 30px;
+        padding: 20px;
         text-align: center;
         align-items: center;
         align-self: center;
