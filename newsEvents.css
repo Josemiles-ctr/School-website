@@ -153,14 +153,13 @@
 
 .EventCalenderandForm {
     display: flex;
-    align-items: left;
-    justify-content: space-between;
-    padding: 0 30px;
+    width: fit-content;
+    padding: 0;
 }
 
 
 .eventContainer {
-    width: 100%;
+    width: fit-content;
     border-radius: 10px;
     margin: 20px auto;
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
@@ -171,6 +170,7 @@
 
 .eventContainer .eventDetails {
     padding: 10px 30px;
+    width: fit-content;
     height: 300px;
     overflow: scroll;
     margin-top: 20px;
