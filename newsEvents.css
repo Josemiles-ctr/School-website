@@ -136,56 +136,7 @@ body {
 
 
 }
-@media (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
 
-    .container {
-        width: 100%;
-        padding: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .container .card {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .EventCalenderandForm {
-        flex-direction: column;
-        align-items: stretch;
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .formContainer {
-        width: 100%;
-        padding: 10px;
-        margin-top: 10px;
-    }
-
-    .eventContainer {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .calendar {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .dates {
-        grid-template-columns: repeat(7, 1fr);
-        gap: 2px;
-    }
-
-    .date {
-        padding: 5px;
-        font-size: 0.7em;
-    }
-}
 .expanded {
     height: 85px;
 }
@@ -244,7 +195,7 @@ body {
     margin-bottom: 8px;
     height: 5px;
     border: none;
-    background-color: rgb(35, 73, 60);
+    backgroundjustify-content: space-between;-color: rgb(35, 73, 60);
     border-radius: 5px;
 }
 
