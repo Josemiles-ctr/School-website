@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -133,12 +132,60 @@ body {
     max-height: 85px;
     overflow: hidden;
     padding: 2px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 8pt;
 
 
 }
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
 
+    .container {
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .container .card {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .EventCalenderandForm {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .formContainer {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .eventContainer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .calendar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .dates {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 2px;
+    }
+
+    .date {
+        padding: 5px;
+        font-size: 0.7em;
+    }
+}
 .expanded {
     height: 85px;
 }
