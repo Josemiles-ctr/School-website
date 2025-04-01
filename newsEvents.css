@@ -195,7 +195,8 @@ body {
     margin-bottom: 8px;
     height: 5px;
     border: none;
-    backgroundjustify-content: space-between;-color: rgb(35, 73, 60);
+    background-color: rgb(35, 73, 60);
+    justify-content: space-between;
     border-radius: 5px;
 }
 
