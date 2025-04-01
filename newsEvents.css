@@ -407,6 +407,12 @@ button {
 }
 
 @media (max-width: 480px) {
+    footer {
+        width: 100vw;
+        overflow-x: hidden;
+        right: 0;
+    }
+
     .heading {
         font-size: 1em;
         padding: 5px;
