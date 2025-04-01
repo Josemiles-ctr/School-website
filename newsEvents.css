@@ -5,6 +5,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .heading {
     margin: 0 auto;
     background-color: rgb(35, 73, 60);
