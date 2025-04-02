@@ -93,6 +93,11 @@ body {
     animation: slideshow 15s infinite linear;
 
 }
+.EventCalenderandForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 @keyframes slideshow {
 
@@ -226,10 +231,16 @@ body {
 .formContainer {
     padding: 0px 20px;
     background-color: whitesmoke;
-    border-top-left-radius: 20px;
+    border-radius: 20px;
     border-bottom-left-radius: 20px;
-    width: 40%;
+    width: 100%;
     margin-top: -30px;
+    h2{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-decoration: underline;
+    }
 }
 
 
@@ -268,7 +279,7 @@ body {
 
 .formContainer .input textarea {
     resize: none;
-    min-width: 80%;
+    min-width: 100%;
     min-height: 200px;
 }
 
