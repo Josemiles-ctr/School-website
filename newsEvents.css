@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
 .heading {
     margin: 0 auto;
     background-color: rgb(35, 73, 60);
