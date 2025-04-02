@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/newsEvents.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+    </header>
+    <nav id="mobile"></nav>
+    
+    <div class="theme">
+            <img id="change-mode" onclick="changeTheme()" src="../assets/dark.png" title="Change Theme" alt="Theme changer">
+    </div>
+       <!--This is where you can put your content
+        Maintain the rest. only extend your designs using the respective specific css file loaded abve
+        corresponding to the page you are workin on
+        
+        Delete the content in the mainsection below and put yours.-->
+        <div class="heading">
+            <h1>NEWS AND UPDATES</h1>
+        </div>
+    
+        <section id="Newbulletins">
+            <div class="container">
+                
+                    <div class="card" id="card-1">
+                        <div class="overlay">
+                            <h3 class="title"><b>ACADEMICS</b></h3>
+                            <p class="description">
+                                This year, our students have set a new benchmark in academic excellence! The recently released exam results showed a significant improvement in overall performance, with several students achieving top national rankings. Our dedicated teachers and hardworking students have proven that perseverance and innovative learning methods yield outstanding results. As we celebrate these achievements, we also look forward to upcoming academic competitions, including the National Science Fair and the Annual Debate Championship.                    </p>
+                            
+                        </div>
+                        <button>Read more</button>
+                    </div>
+        
+                    <div class="card" id="card-2">
+                        <div class="overlay">
+                            <h3 class="title"><b>SPORTS</b></h3>
+                            <p class="description" >
+                                In an exhilarating final match, our school football team emerged victorious in the regional championship, securing the title after a tough season. The team's dedication, teamwork, and relentless training paid off as they defeated their opponents in a thrilling 2-1 victory. With this win, our team advances to the national-level competition next month. We extend our congratulations to all players and coaches for their hard work, and we encourage everyone to show their support as they prepare for the next challenge!                    </p>
+    
+                        </div>
+                        <button>Read more</button>
+                    </div>
+                
+    
+                
+                    <div class="card" id="card-3">
+                        <div class="overlay">
+                            <h3 class="title"><b>LEADERSHIP</b></h3>
+                            <p class="description" id="more">
+                                The much-anticipated student council elections have come to an exciting close! After weeks of campaigns, debates, and student engagement, the newly elected student leaders are ready to take on their roles. The council aims to introduce new initiatives, including a mentorship program for junior students and increased student participation in decision-making processes. 
+                                                </p> 
+    
+                            
+                        </div>
+                        <button onclick="toggleReadMore()">Read more</button>
+                    </div>
+                
+                
+            
+    
+            
+                
+            </div>
+    
+            
+    
+            
+        </section>
+    
+        <section id="CalenderAndForm">
+            <div class="EventCalenderandForm" id="EventCalenderandForm">
+               
+                <div class="eventContainer">
+                    <div class="title">
+                        <h2 style="text-align: center;">Event Calender</h2>
+    
+                    </div>
+    
+                    <div class="eventDetails">
+                        <h1 id="current-year"></h1>
+    
+        
+                    <div class="calendar">
+                        <div class="header">
+                            <button id="prev">◀</button>
+                            <h2 id="month-year"></h2>
+                            <button id="next">▶</button>
+                        </div>
+                        <div class="calendar-inside">
+                            <div class="days">
+                                <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div>
+                                <div>Thu</div><div>Fri</div><div>Sat</div>
+                            </div>
+                            <div id="dates" class="dates">
+                                
+                            </div>
+                        </div>
+                    </div>
+        
+    
+                </div>
+    
+                    </div>
+                    
+                
+    
+            <div class="formContainer">
+                <div class="title">
+                    <h2>Submit News</h2>
+                    <hr>
+                </div>
+                
+                <form action="#" class="input">
+                        <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                        <input type="email" name="email" placeholder="Your Email" required class="form-input">
+                        <textarea placeholder="Type a message..." name="message" required class="form-input"></textarea>
+                        <button type="sunbit" >Submit</button>
+                </form>
+                
+            </div>
+        </div>
+        </section>
+        <footer id="footer"></footer>
+        <script src="../scripts/index.js"></script>
+        <script src="../scripts/newsEvents.js">
+        </script>
+</body>
+</html>
